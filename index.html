@@ -1,0 +1,113 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  
+  <section id="section-outdoor" class="main">
+    <div class="content-images">
+      <h1 id="title" class="animated">BIENVENIDOS</h1>
+      <img id="back3" class="animated" src="./img/outdoor/casa_0004s_0000__Trazado_.png">
+      <img id="back2" class="animated" src="./img/outdoor/casa_0003s_0000__Trazado_.png">
+      <img id="back1" class="animated" src="./img/outdoor/casa_0002_Capa-5.png">
+      <!-- <img src="./img/outdoor/casa_0002s_0000s_0001__Trazado_.png"> -->
+      <img id="pasto" src="./img/outdoor/casa_0002s_0000s_0002__Rectangulo_+_Trazado-compuesto_.png" class="animated">
+      <img id="casa" src="./img/outdoor/casa_0001s_0000s_0002__Trazado_+_Rectangulo_+_Trazado_+_Trazado_+_Trazado_+_Trazado_.png" class="animated">
+      <img id="ventanas" src="./img/outdoor/casa_0001s_0000s_0001__Grupo_.png" class="animated">
+      <img id="chimenea" src="./img/outdoor/casa_0001s_0000s_0000__Trazado_+_Rectangulo_.png" class="animated">
+      <img id="ventana" src="./img/outdoor/casa_0001_Capa-10.png" class="animated">
+      <img id="camino" src="./img/outdoor/casa_0002s_0000s_0000__Trazado_.png" class="animated">
+    </div>    
+  </section>
+
+  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
+  <script src="js/vendor/jquery-3.3.1.min.js"></script>
+  <!-- <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script> -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <script type="text/javascript">
+    var controller = new ScrollMagic.Controller();
+    new ScrollMagic.Scene({
+              offset: '200',       
+            })
+            .setClassToggle("#pasto", "visible") // add class to reveal
+            .addIndicators() // add indicators (requires plugin)
+            .addTo(controller);
+    new ScrollMagic.Scene({
+              offset: '400',       
+            })
+            .setClassToggle("#back1", "visible")
+            .addIndicators()
+            .addTo(controller);
+    new ScrollMagic.Scene({
+              offset: '500',       
+            })
+            .setClassToggle("#back2", "visible")
+            .addIndicators()
+            .addTo(controller);
+    new ScrollMagic.Scene({
+              offset: '600',       
+            })
+            .setClassToggle("#back3", "visible")
+            .addIndicators()
+            .addTo(controller);
+    new ScrollMagic.Scene({
+              offset: '800',       
+            })
+            .setClassToggle("#casa", "visible")
+            .addIndicators()
+            .addTo(controller);
+    new ScrollMagic.Scene({
+              offset: '900',       
+            })
+            .setClassToggle("#ventanas", "visible")
+            .addIndicators()
+            .addTo(controller);
+    new ScrollMagic.Scene({
+              offset: '1000',       
+            })
+            .setClassToggle("#chimenea", "visible")
+            .addIndicators()
+            .addTo(controller);
+    new ScrollMagic.Scene({
+              offset: '1050',       
+            })
+            .setClassToggle("#ventana", "visible")
+            .addIndicators()
+            .addTo(controller);
+     new ScrollMagic.Scene({
+              offset: '1200',       
+            })
+            .setClassToggle("#camino", "visible")
+            .addIndicators()
+            .addTo(controller);
+       new ScrollMagic.Scene({
+              offset: '1500',       
+            })
+            .setClassToggle("#title", "visible")
+            .addIndicators()
+            .addTo(controller);
+  </script>
+</body>
+
+</html>
