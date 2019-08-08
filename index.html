@@ -48,65 +48,55 @@
   <script type="text/javascript">
     var controller = new ScrollMagic.Controller();
     new ScrollMagic.Scene({
-              offset: '200',       
+              offset: '5',       
             })
             .setClassToggle("#pasto", "visible") // add class to reveal
-            .addIndicators() // add indicators (requires plugin)
+            .addTo(controller);
+    new ScrollMagic.Scene({
+              offset: '200',       
+            })
+            .setClassToggle("#back1", "visible")
+            .addTo(controller);
+    new ScrollMagic.Scene({
+              offset: '300',       
+            })
+            .setClassToggle("#back2", "visible")
             .addTo(controller);
     new ScrollMagic.Scene({
               offset: '400',       
             })
-            .setClassToggle("#back1", "visible")
-            .addIndicators()
-            .addTo(controller);
-    new ScrollMagic.Scene({
-              offset: '500',       
-            })
-            .setClassToggle("#back2", "visible")
-            .addIndicators()
+            .setClassToggle("#back3", "visible")
             .addTo(controller);
     new ScrollMagic.Scene({
               offset: '600',       
             })
-            .setClassToggle("#back3", "visible")
-            .addIndicators()
+            .setClassToggle("#casa", "visible")
+            .addTo(controller);
+    new ScrollMagic.Scene({
+              offset: '700',       
+            })
+            .setClassToggle("#ventanas", "visible")
             .addTo(controller);
     new ScrollMagic.Scene({
               offset: '800',       
             })
-            .setClassToggle("#casa", "visible")
-            .addIndicators()
-            .addTo(controller);
-    new ScrollMagic.Scene({
-              offset: '900',       
-            })
-            .setClassToggle("#ventanas", "visible")
-            .addIndicators()
-            .addTo(controller);
-    new ScrollMagic.Scene({
-              offset: '1000',       
-            })
             .setClassToggle("#chimenea", "visible")
-            .addIndicators()
             .addTo(controller);
     new ScrollMagic.Scene({
-              offset: '1050',       
+              offset: '850',       
             })
             .setClassToggle("#ventana", "visible")
-            .addIndicators()
             .addTo(controller);
      new ScrollMagic.Scene({
-              offset: '1200',       
+              offset: '1000',       
             })
             .setClassToggle("#camino", "visible")
-            .addIndicators()
             .addTo(controller);
        new ScrollMagic.Scene({
               triggerHook: 1,
-              offset: '1500',       
+              offset: '1300',       
             })
             .setClassToggle("#title", "visible")
-            .addIndicators()
             .addTo(controller);
   </script>
 </body>
